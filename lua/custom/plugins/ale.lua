@@ -9,6 +9,9 @@ return {
     g.ale_linters = {
       ruby = { 'rubocop', 'ruby' },
       lua = { 'lua_language_server' },
+      systemverilog = { 'verilator' },
+      verilog = { 'verilator' },
+      vhdl = { 'ghdl' },
     }
   end,
 }
