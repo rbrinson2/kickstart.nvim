@@ -985,6 +985,9 @@ require('lualine').setup {
 
 require('lspconfig').verible.setup {
   cmd = { 'verible-verilog-ls', ' --rules_config_search', ' --indentation_spaces=4' },
+  on_attach = function(client, bufnr)
+    vim.api.nvim_set_option_value('omnifunc', 'v:lua.vim.lsp.omnifunc', bufnr)
+  end,
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
