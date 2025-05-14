@@ -1,4 +1,4 @@
-# kickstart.nvim
+# Personal kickstart.nvim 
 
 ## Introduction
 
